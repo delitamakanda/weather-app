@@ -2,7 +2,7 @@ import requests
 
 def get_weather_forcast():
     #connection to api weather
-    url = 'http://api.openweathermap.org/data/2.5/weather?q=Paris,fr?&APPID=3ba2c45e305b029f81b09ea06e2907e1'
+    url = 'http://api.openweathermap.org/data/2.5/weather?q=Paris,fr&units=metric?&APPID=3ba2c45e305b029f81b09ea06e2907e1'
     weather_request = requests.get(url)
     weather_json = weather_request.json()
 
