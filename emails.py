@@ -30,7 +30,7 @@ def get_movies():
 def get_pd():
     try:
         pds = open('liste_des_pd.txt', 'r')
-        pds = pds.read()
+        pd = pds.read()
     except FileNotFoundError as err:
         print(err)
 
