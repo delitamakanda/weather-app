@@ -1,4 +1,4 @@
-def send_emails(emails, movie, forcast):
+def send_emails(emails, movie, get_pd, forcast):
     #connect to the smtp server
     server = smtplib.SMTP('smtp.gmail.com', '587')
     #start the tls server
