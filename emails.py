@@ -42,13 +42,13 @@ def main():
 
     movie = get_movies()
     print(movie)
-    
-    pd = get_pd()
-    print(pd)
 
     forcast = weather.get_weather_forcast()
     print(forcast)
 
-    mailer.send_emails(emails, movie, pd, forcast)
+    pd = get_pd()
+    print(pd)
+
+    mailer.send_emails(emails, movie, forcast, pd)
 
 main()

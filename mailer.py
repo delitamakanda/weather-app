@@ -1,13 +1,13 @@
 import smtplib
 
-def send_emails(emails, movie, forcast):
+def send_emails(emails, movie, get_pd, forcast):
     #connect to the smtp server
     server = smtplib.SMTP('smtp.gmail.com', '587')
     #start the tls server
     server.starttls()
     #Login the server
     password = input("Mot de passe ?")
-    from_email = 'delita.makanda@gmail.com'
+    from_email = 'dmakanda@activbrowser.com'
     server.login(from_email, password)
 
     for to_email, name in emails.items():
