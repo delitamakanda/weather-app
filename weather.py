@@ -10,8 +10,8 @@ def get_weather_forcast():
     temp_min = weather_json['main']['temp_min']
     temp_max = weather_json['main']['temp_max']
 
-    forcast = 'La météo du jour est '
-    forcast += description + ' avec une température haute de ' + str(int(temp_max)) + '°'
-    forcast += ' et une température basse de ' + str(int(temp_min)) + '°.'
+    forcast = 'La meteo du jour est '
+    forcast += description + ' avec une temperature haute de ' + str(int(temp_max)) + '°'
+    forcast += ' et une temperature basse de ' + str(int(temp_min)) + '°.'
 
     return forcast
