@@ -4,14 +4,14 @@ import mailer
 
 def get_emails():
     emails = {}
-    
+
     try:
         email_file = open('emails2.txt','r')
 
         for line in email_file:
             (email, name) = line.split(',')
             emails[email] = name.strip()
-            
+
     except FileNotFoundError as err:
         print(err)
 
@@ -28,6 +28,7 @@ def get_movies():
     return movie
 
 def main():
+
     emails = get_emails()
     print(emails)
 

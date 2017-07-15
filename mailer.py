@@ -16,6 +16,6 @@ def send_emails(emails, movie, forcast):
         message += forcast + '\n\n'
         message += movie + '\n\n'
         message += 'Hope you like it !'
-        server.sendmail(from_email, to_email, message)
+        server.sendmail(from_email, to_email, message.encode('utf-8'))
 
     server.quit()
